@@ -1,0 +1,16 @@
+## General options
+set my_name = "João Grego
+set header_cache = ~/.cache/mutt
+set message_cachedir = "~/.cache/mutt"
+unset imap_passive
+set imap_keepalive = 300
+set mail_check = 60
+set sort=threads
+set sort_aux=reverse-last-date-received
+set sort_browser=reverse-date
+auto_view text/html
+
+source "gpg2 -dq $HOME/.mutt/mutt_passwords.gpg |"
+## Personal mail
+source "~/.mutt/personal"
+folder-hook jpgrego@gmail.com/ 'source ~/.mutt/personal'

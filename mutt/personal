@@ -1,0 +1,23 @@
+## Receive options
+set folder=imaps://jpgrego@imap.gmail.com/
+set imap_user=jpgrego@gmail.com
+set imap_pass=$my_personal_pass
+set spoolfile = +INBOX
+mailboxes = +INBOX
+set postponed = +[Gmail]/Drafts 
+set record = +[Gmail]/Sent\ Mail
+
+## Send options
+set smtp_url=smtps://jpgrego:$my_personal_pass@smtp.gmail.com
+set realname='João Grego'
+set from=jpgrego@gmail.com
+set hostname="gmail.com"
+set signature="João Grego"
+
+## Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
+
+## Hook
+account-hook $folder "set imap_user=jpgrego@gmail.com imap_pass=$my_personal_pass"
+

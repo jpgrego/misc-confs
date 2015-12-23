@@ -1,0 +1,7 @@
+Don't forget to create an encrypted passwords file, ~/.mutt/mutt-passwords.gpg
+
+EXAMPLE:
+set my_personal_pass = "<pass>"
+set my_work_pass = "<pass>"
+
+gpg -e -r '<name>' ~/.mutt/mutt-passwords
