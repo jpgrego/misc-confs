@@ -1,0 +1,28 @@
+## Receive options
+set folder=imaps://outlook.office365.com/
+set imap_user=jgrego@beeverycreative.com
+set imap_pass=$my_work_pass
+set spoolfile = +INBOX
+mailboxes = +INBOX
+set postponed = +Drafts
+set record = +Sent\ Items
+set trash = +Deleted\ Items
+set ssl_use_sslv3 = yes
+
+## Send options
+set smtp_url="smtps://jgrego@beeverycreative.com@outlook.office365.com:587/"
+set smtp_pass = $my_work_pass
+set realname='João Grego'
+set from=jgrego@beeverycreative.com
+set hostname="beeverycreative.com"
+set signature="João Grego"
+set smtp_authenticators = "login"
+
+
+## Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
+
+## Hook
+account-hook $folder "set imap_user=jgrego@beeverycreative.com imap_pass=$my_work_pass"
+

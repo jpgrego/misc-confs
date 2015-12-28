@@ -6,13 +6,17 @@ set spoolfile = +INBOX
 mailboxes = +INBOX
 set postponed = +[Gmail]/Drafts 
 set record = +[Gmail]/Sent\ Mail
+set trash = +[Gmail]/Trash
+set ssl_use_sslv3 = yes
 
 ## Send options
-set smtp_url=smtps://jpgrego:$my_personal_pass@smtp.gmail.com
+set smtp_url=smtps://jpgrego@smtp.gmail.com
+set smtp_pass = $my_personal_pass
 set realname='João Grego'
 set from=jpgrego@gmail.com
 set hostname="gmail.com"
 set signature="João Grego"
+set smtp_authenticators = "login"
 
 ## Connection options
 set ssl_force_tls = yes

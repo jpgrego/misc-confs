@@ -16,3 +16,6 @@ source "gpg2 -dq $HOME/.mutt/mutt_passwords.gpg |"
 ## Personal mail
 source "~/.mutt/personal"
 folder-hook jpgrego@gmail.com/ 'source ~/.mutt/personal'
+## Work mail
+#source "~/.mutt/work"
+#folder-hook jgrego@beeverycreative.com/ 'source ~/.mutt/work'
