@@ -10,6 +10,8 @@ set sort_aux=reverse-last-date-received
 set sort_browser=reverse-date
 auto_view text/html
 
+macro index,pager a "<save-message>=Archives<enter><enter>" "Archive Message"
+
 source "gpg2 -dq $HOME/.mutt/mutt_passwords.gpg |"
 ## Personal mail
 source "~/.mutt/personal"
